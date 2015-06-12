@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	tools:context="${relativePackage}.${activityClass}"	>
+
+
+	    <LinearLayout
+        android:id="@+id/buttom_bar_group"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            style="@style/ButtomBar"  >
+
+            <ImageButton
+                android:id="@+id/buttom_detection"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_detection"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtomBar" >
+
+            <ImageButton
+                android:id="@+id/buttom_position"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_position"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtomBar" >
+
+            <ImageButton
+                android:id="@+id/buttom_setting"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_setting"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    
+	     <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/buttom_bar_group"
+        android:background="@color/devide_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line" >
+
+
+    </FrameLayout>
+    
+</RelativeLayout>

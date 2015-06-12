@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+
+
+    
+    <com.example.vlc.MapView
+          android:id="@+id/mapview"           
+          android:layout_width="500px"
+          android:layout_height="fill_parent"   />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:text="ID"
+            android:textColor="#000"
+            android:background="#AAA"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/力/AndroidstudioProjects/Museum/app/src/main/res/layout/fragment_position.xml -->
